@@ -1,9 +1,13 @@
-<!DOCTYPE html>
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
-    <title>Floats</title>
+    <!-- Load the latest version of TensorFlow.js -->
+        <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+        <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+        <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <title>Sesp Image Recognition</title>
     <link rel='stylesheet' href='styles.css'/>
+
   </head>
   <body>
     <div class='page'>
@@ -13,19 +17,21 @@
       <!-- Load webcam -->
       <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
 
-
       </div>
-
-      <div class='content'></div>
-
-      <div class='footer'>
+      <div class='content'>
         <button id="class-a">Add A</button>
         <button id="class-b">Add B</button>
         <button id="class-c">Add C</button>
 
-          <!-- Load index.js after the content of the page -->
-          <script src="index.js"></script>
+      </div>
+      <div class='footer'>
+
+
+        <!-- Load index.js after the content of the page -->
+        <script src="index.js"></script>
         </div>
     </div>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
   </body>
 </html>
